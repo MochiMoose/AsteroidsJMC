@@ -10,6 +10,12 @@ public class Spaceship : MonoBehaviour
     private float HealthMax = 3f;
     private float HealthCurrent;
 
+    public GameObject BulletRef;
+    public float BulletSpeed = 100f;
+
+    public float FiringRiate = 0.33f;
+    private float FireTimer = 0f;
+
     private Rigidbody2D rigidBody;
 
     // Start is called before the first frame update
@@ -27,6 +33,7 @@ public class Spaceship : MonoBehaviour
         float vert = Input.GetAxis("Vertical");
         ApplyThrust(vert);
         ApplyTorque(horiz);
+        updatefiring();
 
     }
 
@@ -54,5 +61,24 @@ public class Spaceship : MonoBehaviour
     {
         Debug.Log("Game Over!");
         Destroy(gameObject);
+    }
+
+    public void FireBullet()
+    {
+        GameObject bullet = Instantiate(BulletRef, transform.position, transform.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        Vector2 force = transform.up * BulletSpeed;
+        rb.AddForce(force);
+    }
+    
+    private void updatefiring()
+    {
+        bool isfiring = Input.GetButton("Fire1");
+        FireTimer = FireTimer - Time.deltaTime;
+        if ( isfiring && FireTimer <= 0f)
+        {
+            FireBullet();
+            FireTimer = FiringRiate;
+        }
     }
 }

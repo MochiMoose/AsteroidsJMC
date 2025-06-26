@@ -742,6 +742,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnginePower: 75
   TurnPower: -75
+  BulletRef: {fileID: 1336440210315432455, guid: 0e9375843083b4c4ba524d50511bd68a, type: 3}
+  BulletSpeed: 100
 --- !u!60 &1377917124
 PolygonCollider2D:
   m_ObjectHideFlags: 0
