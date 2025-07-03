@@ -6,6 +6,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float Damage = 1f;
+    public GameObject ExplosionRef;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +20,7 @@ public class Bullet : MonoBehaviour
 
     private void Explode()
     {
+        Instantiate(ExplosionRef, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
