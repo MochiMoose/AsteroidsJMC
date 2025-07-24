@@ -274,6 +274,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionDamage: 1
+  HealthMax: 0
+  ChunksRef:
+  - {fileID: 6364795859209012918, guid: d8d7e2e1d30842f48832202234a07dd2, type: 3}
+  - {fileID: 859023838608415024, guid: 88175406d064251409cb9a0d369ffaad, type: 3}
+  - {fileID: 1250171080826461510, guid: 2b50f70c145edf24680fc837067eeaa7, type: 3}
+  ChunksMin: 0
+  ChunksMax: 4
+  ExplodeDist: 0.5
+  ExplosionForce: 10
+  ExplosionRef: {fileID: 2898638630684641076, guid: ccee4975294e19b46b599266c59e00a0, type: 3}
 --- !u!1001 &360350837317349445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,6 +292,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4089648524586149564}
     m_Modifications:
+    - target: {fileID: 694599407219038184, guid: ba5c9e3d78e3fb04daaed3df4da05a59, type: 3}
+      propertyPath: ExplosionRef
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4772527855189980871, guid: ba5c9e3d78e3fb04daaed3df4da05a59, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.3533568
@@ -344,6 +358,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4089648524586149564}
     m_Modifications:
+    - target: {fileID: 694599407219038184, guid: ba5c9e3d78e3fb04daaed3df4da05a59, type: 3}
+      propertyPath: ExplosionRef
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4772527855189980871, guid: ba5c9e3d78e3fb04daaed3df4da05a59, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.7893512
@@ -450,6 +468,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6719947752801232312, guid: 0ccc1e934a710b74783341ec6d982f82, type: 3}
+      propertyPath: ExplosionRef
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -472,6 +494,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_L_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3264147017908407850, guid: 6b97e09186844944b963f8c84d638c93, type: 3}
+      propertyPath: ExplosionRef
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264147017908407850, guid: 6b97e09186844944b963f8c84d638c93, type: 3}
+      propertyPath: ChunksRef.Array.data[2]
+      value: 
+      objectReference: {fileID: 2049014298065008032}
     - target: {fileID: 6341623593041684581, guid: 6b97e09186844944b963f8c84d638c93, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3764105

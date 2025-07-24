@@ -272,3 +272,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287a47bea34b6014798fcaba483ccf0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionDamage: 1
+  HealthMax: 0
+  ChunksRef:
+  - {fileID: 6204339794676012377, guid: ba5c9e3d78e3fb04daaed3df4da05a59, type: 3}
+  - {fileID: 399897850082980354, guid: 0ccc1e934a710b74783341ec6d982f82, type: 3}
+  - {fileID: 2049014298065008032, guid: c040fe4e08ed0c541be3acfda41ff29d, type: 3}
+  ChunksMin: 0
+  ChunksMax: 4
+  ExplodeDist: 0.5
+  ExplosionForce: 10
+  ExplosionRef: {fileID: 2898638630684641076, guid: ccee4975294e19b46b599266c59e00a0, type: 3}

@@ -178,6 +178,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287a47bea34b6014798fcaba483ccf0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionDamage: 1
+  HealthMax: 0
+  ChunksRef: []
+  ChunksMin: 0
+  ChunksMax: 4
+  ExplodeDist: 0.5
+  ExplosionForce: 10
+  ExplosionRef: {fileID: 2898638630684641076, guid: ccee4975294e19b46b599266c59e00a0, type: 3}
 --- !u!1 &6690201031760035071
 GameObject:
   m_ObjectHideFlags: 0
