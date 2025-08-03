@@ -34,7 +34,7 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         CheckTimer += Time.deltaTime;
-		if (CheckTimer > CheckTimer)
+		if (CheckTimer > CheckInterval)
 		{
 			CheckTimer = 0f;
 			

@@ -254,7 +254,7 @@ MonoBehaviour:
   - {fileID: 6364795859209012918, guid: d8d7e2e1d30842f48832202234a07dd2, type: 3}
   - {fileID: 859023838608415024, guid: 88175406d064251409cb9a0d369ffaad, type: 3}
   - {fileID: 1250171080826461510, guid: 2b50f70c145edf24680fc837067eeaa7, type: 3}
-  CheckInterval: 3
+  CheckInterval: 0.94
   PushForce: 100
   SpawnThreshold: 10
 --- !u!4 &786626839
@@ -354,7 +354,7 @@ Transform:
   m_GameObject: {fileID: 1377917119}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7, y: -1.88, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9030237, y: 0.9030237, z: 0.9030237}
   m_ConstrainProportionsScale: 0
   m_Children: []
