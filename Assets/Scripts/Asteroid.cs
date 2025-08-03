@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
+	public int SpawnValue = 3;
+	
     public float collisionDamage = 1f;
 
     public float HealthMax;
